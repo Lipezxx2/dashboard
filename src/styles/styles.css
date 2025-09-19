@@ -1,4 +1,6 @@
 @import url('sidebar.css');
+@import url('cards.css');
+@import url('form.css');
 
 * {
     margin: 0;
@@ -14,59 +16,27 @@ body {
     color: #333;
 }
 
-.stats-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    display: flex;
-    gap: 20px;
+main {
+    padding: 30px;
+}
+
+ /*sessão para entrar em outras telas */
+
+.section {
+    display: none;
     margin-bottom: 30px;
 }
 
-.card {
-    background-color: white;
-    border-radius: 8px;
-    padding: 20px;
-    text-align: center;
-}
-
-.card h3 {
-    margin-bottom: 10px;
-    color: #2c3e50;
-}
-
-.number {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #3498db;
-}
-
-.form-group {
-    margin-bottom: 15px;
-}
-
-label {
+ /*Target é uma classe do css que ativa quando o elemento corresponde ao que está na URL após o # */
+.section:target {
     display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
 }
 
-input, select {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+#inicio {
+    display: block;
 }
 
-button {
-    background-color: #3498db;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: bold;
+.section:target ~ #inicio {
+    display: none;
 }
 
-button:hover {
-    background-color: #2980b9;
-}
