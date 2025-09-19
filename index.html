@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <title>Atividade site Dashboard</title>
+</head>
+<body>
+    <section class="dashboard-container">
+        <div class="sidebar">
+            <div class="logo">
+            <h2>Fazenda Silva</h2>
+            </div>
+
+            <ul class="menu">
+                <li class="active"><a href="#inicio">Início</a></li>
+                <li><a href="#cadastro">Cadastrar</a></li>
+                <li><a href="#controle">Início</a></li>
+                <li><a href="#vacinacao">Início</a></li>
+                <li><a href="#relatorios">Início</a></li>
+                <li><a href="#Acompanhamento de Lucro">Início</a></li>
+            </ul>
+        </div>
+        <div>
+            <header>
+                <h1>Dashboard</h1>
+                <span>Olá, User</span>
+            </header>
+        
+            <main>
+                <section id="inicio" class="section active">
+                    <h2>Visão Geral</h2>
+                    <div class="stats-cards">
+
+                    <div class="card">
+                    <h3>Total de Gado</h3>
+                    <p class="number" id="total-gado">0</p>
+                    </div>
+
+                    <div class="card">
+                    <h3>Vacinados</h3>
+                    <p class="number" id="total-vacinados">0</p>
+                    </div>
+
+                    <div class="card">
+                    <h3>Para Venda</h3>
+                    <p class="number" id="total-venda">0</p>
+                    </div>
+
+                    <div class="card">
+                    <h3>Lucro Mensal</h3>
+                    <p class="number" id="lucro-mensal">R$ 0,00</p>
+                    </div>
+                    
+                    </div>
+                </section>
+
+                <section id="cadastro" class="section">
+                <h2>Cadastrar Novo Animal</h2>
+                <form id="form-animal">
+
+                    <div class="form-group">
+                    <label for="identificacao">ID:</label>
+                    <input type="text" id="identificacao" required>
+                    </div>
+
+                    <div class="form-group">
+                    <label for="raca">Raça:</label>
+                    <input type="text" id="raca" required>
+                    </div>
+
+                    <div class="form-group">
+                    <label for="idade">Idade:</label>
+                    <input type="number" id="idade" required>
+                    </div>
+
+                    <div class="form-group">
+                    <label for="identificacao">Peso:</label>
+                    <input type="number" id="peso" required>
+                    </div>
+
+                    <div class="form-group">
+                    <label for="vacinado">Vacinação</label>
+                    <select id="vacinado">
+                    <option value="sim">Vacinado</option>
+                    <option value="nao">Não Vacinado</option>
+                    </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="venda">Vacinação</label>
+                        <select id="venda">
+                        <option value="nao">Manter no Rebanho</option>
+                        <option value="sim">Destinar à venda</option>
+                        </select>
+                        </div>
+                        <button type="submit">Cadastrar Animal</button>
+                </form>
+                </section>
+            </div>
+            </main>
+    </section>
+</body>
+</html>
